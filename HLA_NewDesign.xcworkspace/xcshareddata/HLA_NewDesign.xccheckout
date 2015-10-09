@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D0C8A033-E205-41EB-B7AD-3550C524EAB5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HLA_NewDesign</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7030AB5C94634310ECC83D767E554753FB1A9A6A</key>
+		<string>https://bitbucket.org/hlaifc/imsolutions.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HLA_NewDesign.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7030AB5C94634310ECC83D767E554753FB1A9A6A</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/hlaifc/imsolutions.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7030AB5C94634310ECC83D767E554753FB1A9A6A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7030AB5C94634310ECC83D767E554753FB1A9A6A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>imsolutions_2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

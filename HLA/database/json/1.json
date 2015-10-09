@@ -1,0 +1,72 @@
+{
+"sql":[
+"UPDATE Trad_Sys_Rider_Label SET LabelCode='GYIRM', LabelDesc='Guaranteeed Monthly Cash Coupons (RM)' WHERE RiderCode='WBM6R' AND LabelCode='SUMA'",
+"UPDATE Trad_Sys_Rider_Mtn SET MinSA='9.00' WHERE RiderCode='WBM6R' AND MinSA!='9.00'",
+"UPDATE Trad_Sys_Rider_Label SET LabelDesc='Health Loading (Per 1K SA) Term' WHERE RiderCode='WBM6R' AND LabelCode='HL1KT'",
+"UPDATE Adm_Occp SET OccpDesc='ACTOR' WHERE id=32",
+"UPDATE Adm_Occp SET OccpDesc='BAR MANAGER' WHERE id=240",
+"UPDATE Adm_Occp SET OccpDesc='CAB DRIVER' WHERE id=403",
+"UPDATE Adm_Occp SET OccpDesc='CONSTRUCTION WORKER' WHERE id=621",
+"UPDATE Adm_Occp SET OccpDesc='CONSTRUCTION WORKER - SKILL' WHERE id=622",
+"UPDATE Adm_Occp SET OccpDesc='DEALER ASSISTANT - some field work' WHERE id=707",
+"UPDATE Adm_Occp SET OccpDesc='DISTRIBUTOR -some field work' WHERE id=758",
+"UPDATE Adm_Occp SET OccpDesc='FOREMAN -all manual work' WHERE id=946",
+"UPDATE Adm_Occp SET OccpDesc='GROUND STEWARD' WHERE id=1041",
+"UPDATE Adm_Occp SET OccpDesc='GUEST RELATIONS OFFICER - night clubs/KTV' WHERE id=1045",
+"UPDATE Adm_Occp SET OccpDesc='HELICOPTER PILOT' WHERE id=1078",
+"UPDATE Adm_Occp SET OccpDesc='NAVIGATOR' WHERE id=1403",
+"UPDATE Adm_Occp SET OccpDesc='NIGHT CLUB OWNER' WHERE id=1421",
+"UPDATE Adm_Occp SET OccpDesc='POLICEMAN' WHERE id=1648",
+"UPDATE Adm_Occp SET OccpDesc='POLICEWOMAN' WHERE id=1650",
+"UPDATE Adm_Occp SET OccpDesc='POSTMAN' WHERE id=1666",
+"UPDATE Adm_Occp SET OccpDesc='POWER STATIONS WORKER (no heights > 10 m)' WHERE id=1673",
+"UPDATE Adm_Occp SET OccpDesc='PUB MANAGER' WHERE id=1735",
+"UPDATE Adm_Occp SET OccpDesc='PUB OWNER' WHERE id=1736",
+"UPDATE Adm_Occp SET OccpDesc='QUARRY WORKER -not handling explosives' WHERE id=1782",
+"UPDATE Adm_Occp SET OccpDesc='SEAFOOD SUPPLIER - with office duties' WHERE id=1978",
+"UPDATE Adm_Occp SET OccpDesc='SEAFOOD SUPPLIER - mainly site duties' WHERE id=1979",
+"UPDATE Adm_Occp SET OccpDesc='SEAMAN/SAILOR - Fireman' WHERE id=1982",
+"UPDATE Adm_Occp SET OccpDesc='SHIP REPAIRER' WHERE id=2016",
+"UPDATE Adm_Occp SET OccpDesc='SHOPKEEPER' WHERE id=2037",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='ACTOR' WHERE OccpCode='OCC00026'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='BAR MANAGER' WHERE OccpCode='OCC00234'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='CAB DRIVER' WHERE OccpCode='OCC00398'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='CONSTRUCTION WORKER' WHERE OccpCode='OCC00616'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='CONSTRUCTION WORKER - SKILL' WHERE OccpCode='OCC00617'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='DEALER ASSISTANT - some field work' WHERE OccpCode='OCC00702'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='DISTRIBUTOR -some field work' WHERE OccpCode='OCC00753'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='FOREMAN -all manual work' WHERE OccpCode='OCC00941'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='GROUND STEWARD' WHERE OccpCode='OCC01039'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='GUEST RELATIONS OFFICER - night clubs/KTV' WHERE OccpCode='OCC01043'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='HELICOPTER PILOT' WHERE OccpCode='OCC01076'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='NAVIGATOR' WHERE OccpCode='OCC01402'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='NIGHT CLUB OWNER' WHERE OccpCode='OCC01420'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='POLICEMAN' WHERE OccpCode='OCC01648'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='POLICEWOMAN' WHERE OccpCode='OCC01650'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='POSTMAN' WHERE OccpCode='OCC01666'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='POWER STATIONS WORKER (no heights > 10 m)' WHERE OccpCode='OCC01673'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='PUB MANAGER' WHERE OccpCode='OCC01735'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='PUB OWNER' WHERE OccpCode='OCC01736'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='QUARRY WORKER -not handling explosives' WHERE OccpCode='OCC01782'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='SEAFOOD SUPPLIER - with office duties' WHERE OccpCode='OCC01978'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='SEAFOOD SUPPLIER - mainly site duties' WHERE OccpCode='OCC01979'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='SEAMAN/SAILOR - Fireman' WHERE OccpCode='OCC01982'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='SHIP REPAIRER' WHERE OccpCode='OCC02016'",
+"UPDATE Adm_Occp_Loading_Penta SET OccpDesc='SHOPKEEPER' WHERE OccpCode='OCC02038’"
+],
+"insertIfFalse": [
+[
+"SELECT isGYI FROM Trad_Details",
+"ALTER TABLE Trad_Details ADD COLUMN isGYI BOOL"
+],
+[
+"SELECT NoNomination from eProposal",
+"alter table eProposal add NoNomination TEXT"
+],
+[
+"SELECT * FROM eProposal_PostCode WHERE PostCode='79150' AND StateCode='JH' AND Town='NUSAJAYA' AND Status='A'",
+"INSERT INTO eProposal_PostCode (PostCode, StateCode, Town,Status) VALUES (79150, 'JH', 'NUSAJAYA', 'A')"
+]
+],
+"remark":""
+}
